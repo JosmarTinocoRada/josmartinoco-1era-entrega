@@ -22,8 +22,6 @@ function calcularPresupuesto() {
         if (numPaginas > 3) {
             costoBase += 200;
         }
-
-        // Calculando el costo total
         var costoTotal = costoBase;
 
         alert("El costo total de tu proyecto es: $" + costoTotal);
@@ -32,5 +30,8 @@ function calcularPresupuesto() {
         if (continuar.toLowerCase() !== "s") {
             break;
         }
-    }
-}
+    }   
+} 
+window.onload = function() {
+        calcularPresupuesto();
+    };
