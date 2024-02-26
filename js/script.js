@@ -2,17 +2,17 @@ function calcularPresupuesto() {
     alert("Bienvenido al calculador de presupuesto.");
 
     while (true) {
-        let tipoDeWeb = prompt("¿Qué tipo de página web deseas: Web Estática, Landing Page o Aplicación Web?");
+        let tipoDeWeb = prompt("¿Qué tipo de página web deseas: Web Estatica, Landing Page o Aplicacion Web?");
         let costoBase = 0;
 
-        switch (tipoDeWeb) {
-            case "Web Estática":
+        switch (tipoDeWeb.toLowerCase()) {
+            case "web estatica":
                 costoBase = 100;
                 break;
-            case "Landing Page":
+            case "landing page":
                 costoBase = 300;
                 break;
-            case "Aplicación Web":
+            case "aplicacion web":
                 costoBase = 400;
                 break;
             default:
@@ -36,6 +36,7 @@ function calcularPresupuesto() {
         }
     }   
 }
+
 
 calcularPresupuesto()
 
